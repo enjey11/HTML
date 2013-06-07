@@ -1,0 +1,259 @@
+/*!
+ * Bootstrap Responsive v2.3.2
+ *
+ * Copyright 2012 Twitter, Inc
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built with all the love in the world @twitter by @mdo and @fat.
+ */
+
+
+/* ADD NEW CSS
+-------------------------------------------------- */
+
+.alert{
+  z-index: 999999;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background-color: #000;
+  color: #fff;
+  
+
+}
+
+section{
+  overflow-y: auto;
+}
+
+#ascensorFloor0{
+  background: #9fb111 url(../img/bgPage.png) no-repeat right top;  
+}
+
+#ascensorFloor1{
+  background: #0ec8b0 url(../img/bgPage.png) no-repeat right top;  
+}
+
+#ascensorFloor2{
+  background: #ffb900 url(../img/bgPage.png) no-repeat right top;
+}
+
+#ascensorFloor3{
+  background: #ef5d29 url(../img/bgPage.png) no-repeat right top;
+}
+
+#ascensorFloor4{
+  background: #434445 url(../img/bgPage.png) no-repeat right top;
+}
+
+#ascensorFloor5{
+  background: #5699a9 url(../img/bgPage.png) no-repeat right top;
+}
+
+.sprite{
+  background-image: url(../img/sprite-icon.png);
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+
+/* TRANSITION
+----------------------------------------------------*/
+.transition:link, 
+.transition:visited{
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  -o-transition: background 0.3s ease-in-out;
+  -ms-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+
+.transition:hover{
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  -o-transition: background 0.3s ease-in-out;
+  -ms-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+  }
+
+/* MENU
+----------------------------------------------------*/
+#navigationMap {
+  position: fixed;
+  right: 20px;
+  bottom: 0;
+  width: auto;
+  height: auto;
+  z-index: 9999;
+}
+#navigationMap .navbar {
+  margin-bottom: 0;
+}
+#navigationMap .navbar .navbar-inner {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#navigationMap .navbar .nav > li{
+  margin-left: 5px;
+}
+
+.navbar .nav > li > a.ascensorLinkActive{
+  color: #fff;
+}
+
+.m0 a:hover, .m0 .ascensorLinkActive{  background-color: #9fb111;}
+.m1 a:hover, .m1 .ascensorLinkActive{  background-color: #0ec8b0;}
+.m2 a:hover, .m2 .ascensorLinkActive{  background-color: #ffb900;}
+.m3 a:hover, .m3 .ascensorLinkActive{  background-color: #ef5d29;}
+.m4 a:hover, .m4 .ascensorLinkActive{  background-color: #434445;}
+.m5 a:hover, .m5 .ascensorLinkActive{  background-color: #5699a9;}
+
+/* REDES SOCIALES
+----------------------------------------------------*/
+.redes .nav{
+  margin: 0;
+  height: 65px;
+}
+
+.redes ul li{
+  height: 100%;
+  border-left: 1px solid #4d4c4c;
+}
+
+.redes ul li a{
+  display: block;
+  width: 26px;
+  height: 21px;
+}
+
+.redes .nav > li > a{
+  padding: 22px 10px 22px;
+}
+
+.in{  background-position: 0 0;}
+.go{  background-position: -50px 0;}
+.fb{  background-position: -100px 0;}
+.tw{  background-position: -150px 0;}
+.ct{  background-position: -200px 0;}
+.in:hover{  background-position: 0 -65px;}
+.go:hover{  background-position: -50px -65px}
+.fb:hover{  background-position: -100px -65px}
+.tw:hover{  background-position: -150px -65px}
+.ct:hover{  background-position: -200px -65px}
+
+.float-left{
+  float: left;
+}
+
+.float-right{
+  float: right;
+}
+
+.navbar-inner .container-fluid{
+  padding: 0;
+}
+h1, h2{ color: #fff;}
+
+.hero-unit h1{
+  font:110px/1 'Impact', sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 110px;
+}
+.hero-unit h2{
+  font-family: 'Squada One', cursive;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 54px;
+  letter-spacing: 5px;
+}
+
+.hero-unit p{
+  color: #fff;
+  line-height: 22px;
+  letter-spacing: 1px;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 1200px) {
+
+  .navbar-inner{
+    height:65px;
+  }
+
+  .hero-unit h1{
+    font-size: 110px;
+  }
+  .hero-unit h2{
+    font-size: 50px;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+
+  .hero-unit{
+    padding: 0 30px;
+  }
+
+  .hero-unit h1{
+    font-size: 100px;
+    line-height: 90px;
+  }
+  .hero-unit h2{
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  .hero-unit{
+    padding: 0 20px;
+  }
+
+  .hero-unit h1{
+    font-size: 80px;
+    line-height: 70px;
+  }
+  .hero-unit h2{
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .hero-unit{
+    padding: 0 5px;
+  }
+
+  .hero-unit h1{
+    font-size: 40px;
+    line-height: 30px;
+  }
+  .hero-unit h2{
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0px;
+  }
+  .hero-unit p{
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+}
+
+@media (max-width: 979px) {
+  
+}
+
+@media (min-width: 980px) {
+
+}
